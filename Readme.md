@@ -1,5 +1,5 @@
 
-# Steps to run
+#  Run project
 - Clone repo
   ```bash
     git clone https://github.com/Joshua-onwuzu/contingent
@@ -7,7 +7,7 @@
   ```
 - Run test
 
-# Steps to test from step 1 to step 2
+# Test specific steps
 - Step 1
   ```bash
     git checkout step-1
@@ -18,7 +18,7 @@
     git checkout step-2
     npm run test
   ```
-- Step 1
+- Step 3
   ```bash
     git checkout step-3
     npm run test
