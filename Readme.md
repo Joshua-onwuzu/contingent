@@ -1,13 +1,13 @@
 
 # Prequisite
 Make sure you have the following installed:
-- Node.js
+- Node.js:
   Install from the official website: https://nodejs.org or via command line (for macOS with Homebrew):
   ```bash
     brew install node
   ```
-- npm
-  npm comes bundled with Node.js. You can verify installation with:
+- npm:
+  it comes bundled with Node.js. You can verify installation with:
   ```bash
   node -v
   npm -v
