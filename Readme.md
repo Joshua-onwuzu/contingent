@@ -2,7 +2,7 @@
 #  Run project
 - Clone repo
   ```bash
-    git clone https://github.com/Joshua-onwuzu/contingent
+    git clone https://github.com/Joshua-onwuzu/contingent.git
     cd contingent
   ```
 - Run test
