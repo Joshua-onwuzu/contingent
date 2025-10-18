@@ -2,8 +2,13 @@ const test = require('node:test');
 const assert = require('node:assert');
 const { Cart } = require('../src/cart.js')
 
-test('it should log inventory', () => {
-    const initialisedCart = new Cart([{dove: 39.99}])
-    const cartInventory = initialisedCart.inventory
-    assert.deepStrictEqual(cartInventory, [{dove: 39.99}])
+test('cart should contain 5 Dove Soaps each with a unit price of 39.99 and total price should equal 199.95', () => {
+    const cart = new Cart([{dove: 39.99}])
+    cart.add('dove', 5)
+    const cartItems = cart.getItems()
+    const totalCartItems = cartItems.products.length
+    const totalCartPrice = cartItems.totalPrice
+    assert.strictEqual(totalCartItems, 5)
+    assert.strictEqual(totalCartPrice, 199.5)
+
 })
