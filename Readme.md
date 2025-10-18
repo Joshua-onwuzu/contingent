@@ -1,11 +1,28 @@
 
+# Prequisite
+Make sure you have the following installed:
+- Node.js
+  Install from the official website: https://nodejs.org or via command line (for macOS with Homebrew):
+  ```bash
+    brew install node
+  ```
+- npm
+  npm comes bundled with Node.js. You can verify installation with:
+  ```bash
+  node -v
+  npm -v
+  ```
+
 #  Run project
-- Clone repo
+- Clone the repository
   ```bash
     git clone https://github.com/Joshua-onwuzu/contingent.git
     cd contingent
   ```
 - Run test
+  ```bash
+    npm run test
+  ```
 
 # Test specific steps
 - Step 1
