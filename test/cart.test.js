@@ -27,8 +27,8 @@ test('cart should contain 8 Dove Soaps each with a unit price of 39.99 and total
 
 test('it should calculate the tax rate of the shopping cart with multiple items', () => {
     const inventory = [{'Dove Soap': 39.99}, {'Axe Deo': 99.99 }]
-    const options = {tax_rate: 12.5}
-    const cart = new Cart(inventory, options)
+    const taxRate = 12.5
+    const cart = new Cart(inventory, taxRate)
     cart.add('Dove Soap', 2)
     cart.add('Axe Deo', 2)
     const cartItems = cart.getItems()
@@ -36,10 +36,10 @@ test('it should calculate the tax rate of the shopping cart with multiple items'
     const has2DoveSoapsEntries = products.filter(product => Object.keys(product)[0] === 'Dove Soap').length === 2
     const has2DAxeDeosEntries = products.filter(product => Object.keys(product)[0] === 'Axe Deo').length === 2
     const totalSalesTax = cartItems.totalSalesTax
-    const totalCartPrice = cartItems.totalCartPrice
+    const totalCartPrice = cartItems.totalPrice
     assert.strictEqual(has2DoveSoapsEntries, true)
     assert.strictEqual(has2DAxeDeosEntries, true)
-    assert.strictEqual(totalCartPrice, 319.92)
-    assert.strictEqual(totalSalesTax, 314.96)
+    assert.strictEqual(totalCartPrice, 314.96)
+    assert.strictEqual(totalSalesTax, 35.00)
     
 })
