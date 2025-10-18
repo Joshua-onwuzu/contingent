@@ -9,6 +9,6 @@ test('cart should contain 5 Dove Soaps each with a unit price of 39.99 and total
     const totalCartItems = cartItems.products.length
     const totalCartPrice = cartItems.totalPrice
     assert.strictEqual(totalCartItems, 5)
-    assert.strictEqual(totalCartPrice, 199.5)
+    assert.strictEqual(totalCartPrice, 199.95)
 
 })
